@@ -1,7 +1,8 @@
+###plots diagram with host number
 import matplotlib.pyplot as plt
 import numpy as np
 import math
-import pandas as pd
+
 
 def plot_circle(radius):
     theta = np.linspace(0, 2 * np.pi, 100)
@@ -19,16 +20,10 @@ def plot_circle(radius):
     ax.set_xlim(-radius - 1, radius + 1)
     ax.set_ylim(-radius - 1, radius + 1)
 
-    # Label the axes and add a legend
-    #ax.set_xlabel('X-axis')
-    #ax.set_ylabel('Y-axis')
-    #ax.legend()
-
     plt.axis('off')
     
-    # Display the plot
     plt.grid(False)
-    #plt.title(f'Circle with Radius {radius} and Negative Values')
+    
     
 def plot_points(radius, period):
     
@@ -100,7 +95,7 @@ def count_zero(repetition_list):
 
 #main
 
-host_num= 17711*2
+host_num=2207
 
 period = accumulate_pisano(host_num)
 zeros = count_zero(period)

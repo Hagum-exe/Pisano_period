@@ -20,7 +20,7 @@ def count_zero(repetition_list):
             zero_count += 1
     return zero_count
 
-host_num=13
+host_num =  17711 
 
 pisano_list = accumulate_pisano(host_num)
 zeros = count_zero(pisano_list)
